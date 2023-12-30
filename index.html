@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script
+      src="https://kit.fontawesome.com/b6aaa8581c.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Video Chat</title>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="assets/Logo-8.png" alt="" />
+      <h1>MeetMe</h1>
+    </div>
+
+    <div class="videos">
+      <span>
+        <h3>Stream Anda</h3>
+        <video id="webcamVideo" autoplay playsinline></video>
+      </span>
+      <span>
+        <h3>Stream Remote</h3>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span>
+    </div>
+
+    <div class="start-camera">
+      <button id="webcamButton" class="btn-start-camera">
+        <i class="fa-solid fa-video"></i> Hidupkan Webcam
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="create-call">
+        <h2>Buat Panggilan Baru</h2>
+        <button id="callButton" class="btn-call" disabled>
+          <i class="fa-solid fa-phone"></i> Buat Panggilan
+        </button>
+      </div>
+      <div class="answer-call">
+        <h2>Bergabung dengan Panggilan</h2>
+        <p>Jawab Panggilan dari Browser lain atau Device Lain</p>
+
+        <input id="callInput" placeholder="Call ID" />
+        <button id="answerButton" class="btn-answer" disabled>
+          <i class="fa-solid fa-phone-volume"></i> Answer
+        </button>
+      </div>
+      <div class="hangup-call">
+        <h2>Tutup Panggilan</h2>
+
+        <button id="hangupButton" class="btn-hangup" disabled>
+          <i class="fa-solid fa-phone-slash"></i> Hangup
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
